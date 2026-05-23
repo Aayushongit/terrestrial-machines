@@ -204,6 +204,7 @@ a { color: inherit; text-decoration: none; }
 .footer .logo { height: 38px; }
 .footer p { color: #aab2bf; max-width: 60ch; }
 .footer .muted { font-size: 0.82rem; margin-top: 16px; color: #aab2bf; opacity: 0.75; }
+.footer .ongoing { margin-top: 18px; color: #ff4d4d; font-weight: 700; letter-spacing: 0.01em; }
 
 /* ===== LIGHTBOX ===== */
 .lightbox {
