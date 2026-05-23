@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Terrestrial Machines — Embodied AI Robotics Research</title>
+<meta name="description" content="Terrestrial Machines is a robotics research group studying embodied intelligence — how machines learn to move, balance, and manipulate the physical world, trained in large-scale physics simulation." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="top">
+  <a class="brand" href="#top">
+    <img class="logo" src="assets/terrestrial_machines_logo.png" alt="Terrestrial Machines" />
+  </a>
+  <nav class="nav-links">
+    <a href="#manipulation">Manipulation</a>
+    <a href="#locomotion">Locomotion</a>
+    <a href="#humanoid">Humanoid</a>
+    <a href="#platforms">Platforms</a>
+  </nav>
+</header>
+
+<!-- ===== HERO / OVERVIEW ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>Architecting intelligence for any physical machine.</h1>
+      <p class="lead">
+        Terrestrial Machines is a research group studying how machines learn to move, balance,
+        and manipulate the physical world. We train control policies in large-scale physics
+        simulation and study their transfer to real hardware — across dexterous hands, legged
+        systems, and whole-body humanoids.
+      </p>
+    </div>
+    <figure class="hero-figure">
+      <div class="media"><img src="assets/quadruped_robot_locomotion.gif" alt="Quadruped robot trotting in simulation" loading="eager" /></div>
+      <figcaption><b>Figure.</b> A quadruped gait learned end-to-end in physics simulation.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== MANIPULATION ===== -->
+<section class="gallery" id="manipulation">
+  <div class="section-head">
+    <p class="eyebrow">Research Area 01</p>
+    <h2>Dexterous manipulation</h2>
+    <p class="section-sub">Many-fingered hands learn the fine motor skills needed to grasp and reorient objects using contact alone — a prerequisite for robots that can use human tools and environments.</p>
+  </div>
+  <div class="grid">
+    <figure class="card">
+      <div class="media"><img src="assets/dexterous_hand_cube_manipulation.gif" alt="Robotic hand rotating a cube" loading="lazy" /></div>
+      <figcaption><span class="figtag">Fig. 1.1</span><h4>In-Hand Cube Manipulation</h4><p>A five-fingered hand rotates and repositions a cube using only its fingertips — the precise control needed to handle everyday objects.</p></figcaption>
+    </figure>
+    <figure class="card">
+      <div class="media"><img src="assets/shadow_hand_cube_reorientation.gif" alt="Hand reorienting a cube to a target pose" loading="lazy" /></div>
+      <figcaption><span class="figtag">Fig. 1.2</span><h4>Goal-Conditioned Reorientation</h4><p>The hand rotates a cube to match a target pose shown beside it, solving thousands of randomized goals in sequence.</p></figcaption>
+    </figure>
+    <figure class="card">
+      <div class="media"><img src="assets/robot_hand_tennis_ball_grasp.gif" alt="Robot hand grasping a tennis ball" loading="lazy" /></div>
+      <figcaption><span class="figtag">Fig. 1.3</span><h4>Adaptive Grasping</h4><p>Securing and lifting a round, slippery object — robust grip control learned from simulated contact dynamics.</p></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== LOCOMOTION ===== -->
+<section class="gallery alt" id="locomotion">
+  <div class="section-head">
+    <p class="eyebrow">Research Area 02</p>
+    <h2>Legged locomotion</h2>
+    <p class="section-sub">From four legs to many, our agents learn gaits that stay balanced, energy-efficient, and resilient — discovered from scratch through trial and reward.</p>
+  </div>
+  <div class="grid">
+    <figure class="card">
+      <div class="media"><img src="assets/quadruped_robot_locomotion.gif" alt="Quadruped robot trotting" loading="lazy" /></div>
+      <figcaption><span class="figtag">Fig. 2.1</span><h4>Quadruped Trotting</h4><p>A four-legged robot settles into a stable, efficient gait across flat ground.</p></figcaption>
+    </figure>
+    <figure class="card">
+      <div class="media"><img src="assets/quadruped_robot_standing.gif" alt="Quadruped robot balancing" loading="lazy" /></div>
+      <figcaption><span class="figtag">Fig. 2.2</span><h4>Balance &amp; Stance Control</h4><p>Holding a steady posture and recovering its footing under disturbance.</p></figcaption>
+    </figure>
+    <figure class="card">
+      <div class="media"><img src="assets/actuated%20passive%20walker.gif" alt="Actuated passive dynamic walker" loading="lazy" /></div>
+      <figcaption><span class="figtag">Fig. 2.3</span><h4>Actuated Passive Walker</h4><p>A passive-dynamics walker with minimal actuation — efficient motion that borrows from natural pendulum swing.</p></figcaption>
+    </figure>
+    <figure class="card">
+      <div class="media">
+        <video src="assets/Tensgritty_structures.webm" autoplay muted loop playsinline preload="metadata"></video>
+      </div>
+      <figcaption><span class="figtag">Fig. 2.4</span><h4>Tensegrity Structures</h4><p>A tension-and-compression (tensegrity) robot learns to move — exploring locomotion through a network of struts and cables.</p></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== HUMANOID ===== -->
+<section class="gallery" id="humanoid">
+  <div class="section-head">
+    <p class="eyebrow">Research Area 03</p>
+    <h2>Whole-body humanoid control</h2>
+    <p class="section-sub">High-degree-of-freedom humanoids are among the hardest systems to control. Our policies coordinate dozens of joints for walking, running, and dynamic motion.</p>
+  </div>
+  <div class="grid">
+    <figure class="card">
+      <div class="media"><img src="assets/humanoid_walking_foot_contacts.gif" alt="Humanoid walking with foot contact markers" loading="lazy" /></div>
+      <figcaption><span class="figtag">Fig. 3.1</span><h4>Bipedal Walking</h4><p>A humanoid learns a natural gait; highlighted markers track each foot–ground contact.</p></figcaption>
+    </figure>
+    <figure class="card">
+      <div class="media"><img src="assets/humanoid_stair_ascent.gif" alt="Humanoid climbing stairs" loading="lazy" /></div>
+      <figcaption><span class="figtag">Fig. 3.2</span><h4>Stair Climbing</h4><p>Ascending steps demands precise foot placement and constant whole-body balance.</p></figcaption>
+    </figure>
+    <figure class="card">
+      <div class="media"><img src="assets/humanoid_stair_descent.gif" alt="Humanoid descending stairs" loading="lazy" /></div>
+      <figcaption><span class="figtag">Fig. 3.3</span><h4>Stair Descent</h4><p>Controlled downward stepping while managing momentum and stability.</p></figcaption>
+    </figure>
+    <figure class="card">
+      <div class="media"><img src="assets/humanoid_running_motion_trails.gif" alt="Humanoid running with motion trails" loading="lazy" /></div>
+      <figcaption><span class="figtag">Fig. 3.4</span><h4>Dynamic Running</h4><p>High-speed running, with motion-reference trails guiding lifelike movement.</p></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== CUSTOM HUMANOID PLATFORMS ===== -->
+<section class="gallery alt" id="platforms">
+  <div class="section-head">
+    <p class="eyebrow">In Development</p>
+    <h2>Custom humanoid platforms</h2>
+    <p class="section-sub">Our in-house humanoid models and mechanisms, under active research — from concept design and simulation through to fast, dynamic, and highly agile motion.</p>
+  </div>
+
+  <div class="grid cols-2">
+    <figure class="card">
+      <div class="media">
+        <video src="assets/humanoid_agile_jump.webm" autoplay muted loop playsinline preload="metadata"></video>
+      </div>
+      <figcaption><span class="figtag">In-House Model</span><h4>Agile Jumping</h4><p>Explosive jumps that demand precise timing and tight energy control.</p></figcaption>
+    </figure>
+    <figure class="card">
+      <div class="media">
+        <video src="assets/humanoid_acrobatic_flip.webm" autoplay muted loop playsinline preload="metadata"></video>
+      </div>
+      <figcaption><span class="figtag">In-House Model</span><h4>Acrobatic Maneuvers</h4><p>Flips and inversions — pushing whole-body control to its dynamic limits.</p></figcaption>
+    </figure>
+  </div>
+
+  <h3 class="subhead">Design &amp; simulation</h3>
+  <div class="grid cols-2">
+    <figure class="card">
+      <div class="media"><img src="assets/jet_humanoid_biped_sim.png" alt="Humanoid simulation model" loading="lazy" /></div>
+      <figcaption><span class="figtag">Simulation</span><h4>Whole-Body Sim Platform</h4><p>The full humanoid model used to train and validate control policies.</p></figcaption>
+    </figure>
+    <figure class="card">
+      <div class="media"><img src="assets/jet_humanoid_standing_paused.png" alt="Humanoid paused in simulator" loading="lazy" /></div>
+      <figcaption><span class="figtag">Simulation</span><h4>Pose &amp; State Analysis</h4><p>Inspecting joint states and stance, frozen mid-evaluation.</p></figcaption>
+    </figure>
+    <figure class="card">
+      <div class="media"><img src="assets/jet_humanoid_arms_outstretched.png" alt="Humanoid with arms outstretched" loading="lazy" /></div>
+      <figcaption><span class="figtag">Simulation</span><h4>Reach &amp; Posture</h4><p>Studying arm reach and upper-body posture for balance and future manipulation.</p></figcaption>
+    </figure>
+    <figure class="card">
+      <div class="media"><img src="assets/jet_humanoid_walking.png" alt="Humanoid walking in simulator" loading="lazy" /></div>
+      <figcaption><span class="figtag">Simulation</span><h4>Locomotion Studies</h4><p>Evaluating gait and dynamics step by step in the simulator.</p></figcaption>
+    </figure>
+    <figure class="card">
+      <div class="media tall"><img src="assets/robotic_leg_joint_design_sketch.png" alt="Concept sketch of a robotic leg with labeled joints" loading="lazy" /></div>
+      <figcaption><span class="figtag">Mechanism Design</span><h4>Leg &amp; Joint Design</h4><p>Concept sketch of a high-torque robotic leg, mapping the actuated joints (q₂, q₄) that drive each step.</p></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="brand">
+      <img class="logo" src="assets/terrestrial_machines_logo.png" alt="Terrestrial Machines" />
+    </div>
+    <p>Architecting General Physical Intelligence</p>
+    <p class="muted">© <span id="year"></span> Terrestrial Machines. All demonstrations rendered in physics simulation.</p>
+  </div>
+</footer>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <div class="lightbox-content" id="lightboxContent"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

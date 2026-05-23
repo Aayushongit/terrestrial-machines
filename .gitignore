@@ -1,0 +1,5 @@
+# local render/preview artifacts
+_preview*.png
+# OS cruft
+.DS_Store
+Thumbs.db
